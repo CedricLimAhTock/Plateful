@@ -1,0 +1,24 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    left: auto;
+    margin: 100px;
+    height: 100vh;
+  }
+  
+  .search-input {
+    width: 40%;
+    height: 40px;
+    font-size: 16px;
+    text-indent: 20px;
+    padding-right: 30px;
+    border-radius: 20px;
+    background-image: url("../../statics/search.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
+    background-size: 25px;
+  }
+  
+  .search-input:focus {
+    outline: none;
+  }

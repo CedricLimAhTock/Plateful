@@ -1,3 +1,39 @@
 * {
     font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color-bg: #E0E2ED;
+    --color-green: #60B058;
+    --color-white: #EEEEEE;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #E0E2ED;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+}
+
+/* ================== MEDIA QUERIES (MEDIUM DEVICES) ======================== */
+@media screen and (max-width: 1024px) {
+    
+}
+
+/* ================== MEDIA QUERIES (SMALL DEVICES) ======================== */
+@media screen and (max-width: 600px) {
+    
 }
