@@ -4,12 +4,8 @@
   height: 100%;
   border-radius: 20px;
   background-color: rgba(238, 238, 238, 0.75);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
-
-
-
 
 .img {
   align-items: center;
@@ -49,6 +45,10 @@
   background-color: transparent;
   border: none;
   padding: 0;
+}
+
+.favourite:active {
+  transform: scale(0.8);
 }
 
 .favourite img {
