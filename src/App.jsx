@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from './components/Header/Header'
 import Search from './components/Search/Search'
-import Container from './components/Container/Container'
 import Footer from './components/Footer/Footer'
+import './index.css'
 
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
     <>
         <Header />
         <Search />
-        <Container />
+        <div className="card-gallery"></div>
         <Footer />
     </>
   )

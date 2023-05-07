@@ -1,27 +1,26 @@
-import React from "react";
-import "./container.css";
-import food from "../../statics/apple-pie.png";
-import HeartButton from "../HeartButton/HeartButton";
-const Container = () => {
+import React from 'react';
+import './container.css';
+import Selection from './Selection.jsx';
+
+const Container = ({ recipe }) => {
+  const { label, calories, ingredients, image } = recipe || {}; // Destructure the recipe object
+
+  const numOfIngredients = ingredients ? ingredients.length : 0; // Check if ingredients exist before accessing length
+
   return (
-    <div className="card">
-      <div className="img">
-        <img className="foodImg" src={food} alt="food" />
-      </div>
-      <div className="description">
-        <h2 className="title">Apple Pie</h2>
-        <div className="info">
-          <p>Calories: 27kCal</p>
-          <p>No of ingredients: 9</p>
+      <div className="card">
+        <div className="img">
+          <img className="foodImg" src={image} alt="food" />
+        </div>
+        <div className="description">
+          <h2 className="recipe">{label}</h2>
+          <div className="info">
+            <p>Calories: {calories} cal</p>
+            <p>No of ingredients: {numOfIngredients}</p>
+          </div>
+          <Selection />
         </div>
       </div>
-      <div className="options">
-        <HeartButton className="heart" />
-        <button className="btn-green" onClick="location.href='#' ">
-          Explore
-        </button>
-      </div>
-    </div>
   );
 };
 
