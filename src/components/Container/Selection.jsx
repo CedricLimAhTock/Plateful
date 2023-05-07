@@ -1,15 +1,23 @@
-import React from "react";
-import heart from "../../statics/heart.svg";
+import React, { useState } from "react";
+import { ReactComponent as Heart } from "../../statics/heart.svg";
 
 const Selection = () => {
+  const [fillColor, setFillColor] = useState("");
   const alter = () => {
-    alert("test");
+    setFillColor((fillColor) =>
+      fillColor === "rgba(207, 78, 93, 1)"
+        ? "rgba(0,0,0,0)"
+        : "rgba(207, 78, 93, 1)"
+    );
   };
-
   return (
     <div className="selection">
       <div className="favourite" onMouseUp={alter}>
-        <img src={heart} alt="favourite icon" />
+        <Heart
+          onMouseUp={alter}
+          style={{ fill: fillColor }}
+          className="heart"
+        />
       </div>
       <div className="explore-con">
         <button className="explore">Explore</button>

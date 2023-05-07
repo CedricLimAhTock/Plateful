@@ -51,10 +51,9 @@
   transform: scale(0.8);
 }
 
-.favourite img {
-  height: 75%;
-  fill: transparent;
-  transition: fill 0.3s ease;
+.heart {
+  transform: scale(1.5);
+  /* transition: fill 0.3s ease; */
 }
 
 .explore {
