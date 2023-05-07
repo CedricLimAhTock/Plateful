@@ -47,8 +47,8 @@
   padding: 0;
 }
 
-.favourite:active {
-  transform: scale(0.8);
+.heart:active {
+  transform: scale(1);
 }
 
 .heart {

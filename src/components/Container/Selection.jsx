@@ -13,11 +13,7 @@ const Selection = () => {
   return (
     <div className="selection">
       <div className="favourite" onMouseUp={alter}>
-        <Heart
-          onMouseUp={alter}
-          style={{ fill: fillColor }}
-          className="heart"
-        />
+        <Heart style={{ fill: fillColor }} className="heart" />
       </div>
       <div className="explore-con">
         <button className="explore">Explore</button>
