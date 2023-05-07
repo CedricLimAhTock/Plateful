@@ -1,12 +1,12 @@
-import React from 'react';
-import './container.css';
-import food from '../../statics/apple-pie.png';
-
+import React from "react";
+import "./container.css";
+import food from "../../statics/apple-pie.png";
+import HeartButton from "../HeartButton/HeartButton";
 const Container = () => {
   return (
     <div className="card">
       <div className="img">
-        <img className='foodImg' src={food} alt="food" />
+        <img className="foodImg" src={food} alt="food" />
       </div>
       <div className="description">
         <h2 className="title">Apple Pie</h2>
@@ -16,11 +16,13 @@ const Container = () => {
         </div>
       </div>
       <div className="options">
-      <button className="btn-green" onClick="location.href='#' ">Explore</button>
+        <HeartButton className="heart" />
+        <button className="btn-green" onClick="location.href='#' ">
+          Explore
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Container
-
+export default Container;
