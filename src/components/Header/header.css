@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #D9D9D9;
   padding: 30px;
@@ -9,6 +9,9 @@
 .title {
   letter-spacing: 2px;
   font-weight: 500;
+  left: auto;
+  top: auto;
+
 }
 
 .green {
