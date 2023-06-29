@@ -1,3 +1,24 @@
+### Plateful: A concept webapp to explore new recipes
+
+Makes use of the [Edamam API](https://www.edamam.com/)
+
+Made with react
+
+
+![](/media/PlatefulDemo.gif)
+
+# About API key
+
+
+Please procure your own API key on [Edamam](https://www.edamam.com/)
+
+Then fill out ```src/keys-example.js``` with your own keys
+
+Finally, rename ```src/keys-example.js``` to ```src/keys.js```
+
+This will allow you to use/develop Plateful with your own keys
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
